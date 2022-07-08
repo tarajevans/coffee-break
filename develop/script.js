@@ -1,6 +1,8 @@
 var jokeType="";
 var joke="";
 var punchline="";
+var getJokeBtn=document.getElementById("getJokeBtn");
+function getJoke() {
 
 fetch("https://v2.jokeapi.dev/joke/Any?safe-mode").then(function(response) {
   response.json().then(function(data) {
@@ -16,8 +18,11 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode").then(function(response) {
 
         break;
     }
+    console.log(joke)
   });
 });
+}
+getJoke();
 
-
+getJokeBtn.addEventListener("click", getJoke);
 //single twopart setup delivery

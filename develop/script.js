@@ -2,6 +2,11 @@ var jokeType="";
 var joke="";
 var punchline="";
 var getJokeBtn=document.getElementById("getJokeBtn");
+var jokeDiv=document.getElementById("joke");
+var punchlineDiv=document.getElementById("punchline");
+
+
+//make asynchronous
 function getJoke() {
 
 fetch("https://v2.jokeapi.dev/joke/Any?safe-mode").then(function(response) {
@@ -18,11 +23,37 @@ fetch("https://v2.jokeapi.dev/joke/Any?safe-mode").then(function(response) {
 
         break;
     }
-    console.log(joke)
   });
 });
+displayJoke();
 }
-getJoke();
 
+//display joke
+function displayJoke() {
+
+  switch (jokeType) {
+    case "single":
+      jokeDiv.textContent=joke;
+      punchlineDiv.textContent="";
+      
+      break;
+    case "twopart":
+      jokeDiv.textContent=joke;
+      punchlineDiv.textContent="";
+      //make punchline stall to appear
+      console.log("start counting");
+      setTimeout(displayPunchline, 4000);
+
+      break;
+  }
+
+
+  
+}
+
+//display punchline
+function displayPunchline () {
+  punchlineDiv.textContent=punchline;
+console.log("it's been 4 seconds");
+}
 getJokeBtn.addEventListener("click", getJoke);
-//single twopart setup delivery

@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coffe Break Fun</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
 </head>
+
 <body>
-<button id="getJokeBtn">Click for More Laughs!</button>
+    <!--header-->
+    <header>
+        <h1><span class="coffee"> Coffee Break Fun</span></h1>
+    </header>
+    <section class="coffee_main">
+        <main>
+            <!--Class attribute with name "section"-->
+            <section id="about" class="content">
+                <h2>About Us</h2>
+                <p>
+                    Team Coffee break stems from a way to break from day to day stresses.
+                    This applications is the solution and brings a smile to your face.
+                </p>
+            </section>
+                <section>
+                    <p> Please select one option:-</p>
+                </section>
+                
+                <div id = "jokes">
+                    <input type ="radio" name = "selection" id = "rd1" value = "joke">
+                    <label for = "rd1">Jokes</label>
+                </div>
+                <div id ="joke">
 
+                </div>
+                 <div id = "punchline">
 
+                 </div>
+                <div id = "comics">
+                        <input type ="radio" name = "selection" id = "rd2" value = "comic">
+                        <label for = "rd2">Comics</label>
+                </div>
 
-    <script src="./develop/script.js"></script>
+                <button id="submit">Let the Fun Begin</button>
+                <div class ="container" id="display">
+                    <div class="title" id="title"></div>
+                </div>
+    
+            
+        </main>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/comic.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,36 @@
-var jokeType =""; 
+//Hide fields on intial load
+
+var selectJokeoption = document.getElementById("jokes");
+var selectComicsoption = document.getElementById("comics");
+var submitButton = document.getElementById('submit');
+var jokeType ="";
 var joke = "";
 var punchLine = "";
-var getJokeButton = document.getElementById("getJokeBtn");
 var jokeDiv = document.getElementById("joke");
 var punchLineDiv = document.getElementById("punchline");
+var radioOptions= document.querySelector('input[name="selection"]').value;
+
+console.log(radioOptions);
+
+/*function displayOption() {
+    selectJokeoption.style.display = "block";
+    selectComicsoption.style.display = "block";
+};*/
+
+submitButton.onclick = function() {  
+    radio();
+    }
+
+function radio() {
+    //console.log(radioOptions);
+        if (radioOptions =="joke") {
+        getJoke();
+        } else {
+        alert("Please select any one options");
+        }
+        }
+        
+
 
 //when page loads, load first joke
 jokeDiv.onload = getJoke();
@@ -40,9 +67,7 @@ function displayJoke(){
       break;
   }
 }
-
 function displayPunchline(){
   punchLineDiv.textContent = punchLine;
 }
-
-getJokeButton.addEventListener("click", getJoke);
+//getJokeButton.addEventListener("click", getJoke);

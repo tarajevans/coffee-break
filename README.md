@@ -3,6 +3,18 @@
 
 * This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
+## Team Member
+  * Tara Evans
+  * Priya Bakshi
+  * Prerana Shukla
+
+## API Use
+  * [Jokes](https://v2.jokeapi.dev/joke/Programming?safe-mode)
+  * [Comics](https://the-ultimate-api-challenge.herokuapp.com)
+  * [Horoscope](https://divineapi.com/api/1.0/get_coffee_cup_reading.php)
+  * [Inspriational Qotes](http://quotable.io/random)
+
+
 ## Gentting Strated
 * [Git Hub Repository](https://github.com/tarajevans/coffee-break.git)
 * [ Demo Video ]()
@@ -17,6 +29,7 @@
 ## Summary
 * HTML,CSS ,Javascript and Jquery documents create a Coffee Break Fun web application.
 This project emphasizes the use of using Javascript and Jquery to make dynamic changes to an HMTL document.
+
 
 
 

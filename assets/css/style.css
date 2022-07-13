@@ -1,107 +1,112 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html{
-    background-image: url("../image/logo.jpg");
-    background-repeat:no-repeat;
-    background-size: cover;
-    opacity: 0.6;
-}
-
 body {
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    line-height: 1.3;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Noto Sans SC', sans-serif; */
+    padding-bottom: 8em;
+    background-color: rgb(54, 51, 51);
 
-p {
-    font-size: 100%;
-    margin: 3%;
-    
-}
-
-button {
-    min-width: 100px;
-    color: #fff;
-    background-color: rgb(233, 121, 16);
-    border-radius: 10px;
-    border: none;
-}
-
-button:hover {
-    background-color: rgb(211, 120, 15);
-}
-
-label {
-    width: 50px;
-    height: 10px;
-    text-align: center;
-    font-size: 100%;
-    margin: 8px 0;
-    border-radius: 15px;
-}
-
-input {
-    width: 50px;
-    height: 10px;
-    text-align: center;
-    font-size: 100%;
-    margin: 8px 0;
-    border-radius: 15px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    
-}
-
-header h1{
-    text-align: center;
-    color: white;
 }
 
 main {
-    text-align: center;
-    color: brown;
+    flex: 1 0 auto;
 }
 
-main h2 {
-    font-size: 150%;
-    margin: 1%
+h1, h5 {
+    font-weight: bold;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+
+}
+
+#joke {
+    font-size: 20px;
+    color: beige;
+}
+
+#punchline{
+    font-size: 20px;
+    color: beige;
+}
+
+#horotitle{
+    font-size: 20px;
+    color: beige;
+}
+
+#content{
+    font-size: 20px;
+    color: beige;
+}
+
+#quote{
+    font-size: 20px;
+    color:beige
 }
 
 
-section {
-    margin: 3%;
+
+input::placeholder {
+    color: beige;
 }
 
-section button {
-    margin: 5px;
-    font-size: 100%;
-    width: 50px;
-    height: 50px;
+input:focus::placeholder {
+    color: transparent;
 }
 
-#submit {
-    width: 200px;
+.modal {
+    max-width: 750px;
 }
 
+.page-footer {
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
 
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
-    header h1 {
-        margin: 1%;
-        text-align: center;
-    }
-    section ul {
-        display: block;
-    }
+.ftext {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.eventHeading {
+    font-weight: bold;
+}
+
+#moreEvents {
+    margin-bottom: 50px;
+}
+
+#heading{
+    position: relative;
+}
+
+#heading h1, #heading h5{
+    position: relative;
+    font-style: oblique;
+}
+
+#heading img{
+    position: absolute;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.modalConentSecondLine {
+    margin-top: 20px;
+}
+
+.row-footer {
+    margin-bottom: 0px;
 }

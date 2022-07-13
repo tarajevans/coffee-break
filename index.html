@@ -1,62 +1,123 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coffe Break Fun</title>
-    <link rel="stylesheet" href="./assests/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee Break Fun</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <h1><span class="coffee"> Coffee Break Fun</span></h1>
-    </header>
-    <section class="coffee_main">
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="col s12" id="jumbotron">
+                <div class="card-panel center-align lighten-3" id="heading">
+                    <h1>
+                        Coffee Break Fun
+                    </h1>
+                    <h5>Team Coffee break stems from a way to break from day to day stresses.<br>
+                        This applications is the solution and brings a smile to your face.</h5>
+                    <img src="assets/image/coffee.gif" alt=" coffee picture">
+                </div>
+            </div>
+        </div>
         <main>
-            <!--Class attribute with name "section"-->
-            <section id="about" class="content">
-                <h2>About Us</h2>
-                <p>
-                    Team Coffee break stems from a way to break from day to day stresses.
-                    This applications is the solution and brings a smile to your face.
-                </p>
-            </section>
+                <div class="row">
+                    <div class="col s12">
+                        <div id = "jokes">
+                            <h2>Jokes &#128514;</h2>
+                    <div id = "joke">
+
+                    </div>
+                            <div id = "punchline">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h2>Comics &#128214;</h2>
+                        <div class ="container">
+                            <div class="title" id="title"></div>
+                                <img id="display"/>                                
+                        </div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <h2>Coffee Cup Reading &#9749;</h2>
+                    <div id="horoscope">
+                        <div class = "horo_title" id = "horotitle">
+                        </div>
+                        <div class = "horo_img">
+                            <img id ="display_img"/>
+                        </div>
+                        <div class = "horo_content" id = "content">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "row">
+
+                <h2>Mantra of life</h2>
                 <section>
-                    <p> Please select one option:-</p>
-                </section>
-                
-                <div id = "jokes">
-                    <input type ="radio" name = "selection" id = "rd1" value = "joke">
-                    <label for = "rd1">Jokes</label>
+                    <p id="quote">
+                        "Inspirational Quotes"
+                    </p>
+                  </section>
+                  </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" id="submit" class = "rounded"> Click Here For More Fun
+                    </button>
                 </div>
-                <div id ="joke">
+            </form>
+        </div>
+        
+    </main>
 
+    <footer class="page-footer teal lighten-2">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row row-footer">
+                    <div class="col s3">
+                        2022
+                    </div>
+                    <div class="col s3">
+                        
+                    </div>
+                    <div class="col s3">
+                        
+                    </div>
+
+                    <div class="col s3">
+                        <a class="grey-text text-lighten-4 right ftext" href="#!">Stress Buster &#128512;</a>
+                    </div>
                 </div>
-                 <div id = "punchline">
+            </div>
+        </div>
+    </footer>
 
-                 </div>
-                <div id = "comics">
-                        <input type ="radio" name = "selection" id = "rd2" value = "comic">
-                        <label for = "rd2">Comics</label>
-                </div>
-
-                <button id="submit">Let the Fun Begin</button>
-    
-                <div class ="container">
-                    <div class="title" id="title"></div>
-                        <img id="display"/>
-                        <button id="comicbtn">Another Comic</button>
-                </div>
-            
-        </main>
-    </section>
-
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"
+        integrity="sha256-uC1JMW5e1U5D28+mXFxzTz4SSMCywqhxQIodqLECnfU=" crossorigin="anonymous"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/comic.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/comic.js"></script>
+    <script src = "assets/js/horoscop.js"></script>
+    <script src = "assets/js/inspration.js"></script>
 </body>
 
 </html>

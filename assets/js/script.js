@@ -4,7 +4,7 @@ var joke = "";
 var punchLine = "";
 var jokeDiv = document.getElementById("joke");
 var punchLineDiv = document.getElementById("punchline");
-var submit = document.getElementById("submit");
+var submit = document.getElementById("submit_1");
 //var radioOptions= document.querySelector('input[name="selection"]').value;
 
 //console.log(radioOptions);

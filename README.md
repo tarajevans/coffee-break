@@ -12,7 +12,7 @@
   * [Jokes](https://v2.jokeapi.dev/joke/Programming?safe-mode)
   * [Comics](https://the-ultimate-api-challenge.herokuapp.com)
   * [Horoscope](https://divineapi.com/api/1.0/get_coffee_cup_reading.php)
-  * [Inspriational Qotes](http://quotable.io/random)
+
 
 
 ## Gentting Strated

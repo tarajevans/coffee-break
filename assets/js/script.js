@@ -1,37 +1,18 @@
 //Hide fields on intial load
-
-var selectJokeoption = document.getElementById("jokes");
-var selectComicsoption = document.getElementById("comics");
-var submitButton = document.getElementById('submit');
 var jokeType ="";
 var joke = "";
 var punchLine = "";
 var jokeDiv = document.getElementById("joke");
 var punchLineDiv = document.getElementById("punchline");
-var radioOptions= document.querySelector('input[name="selection"]').value;
+var submit = document.getElementById("submit");
+//var radioOptions= document.querySelector('input[name="selection"]').value;
 
-console.log(radioOptions);
+//console.log(radioOptions);
 
 /*function displayOption() {
     selectJokeoption.style.display = "block";
     selectComicsoption.style.display = "block";
 };*/
-
-submitButton.onclick = function() {  
-    radio();
-    }
-
-function radio() {
-    //console.log(radioOptions);
-        if (radioOptions =="joke") {
-        getJoke();
-        } else {
-        alert("Please select any one options");
-        }
-        }
-        
-
-
 //when page loads, load first joke
 jokeDiv.onload = getJoke();
 //fetch joke from api
@@ -57,7 +38,7 @@ function getJoke(){
 function displayJoke(){
   switch (jokeType){
     case "single":
-        jokeDiv.textContent = joke;
+        jokeDiv.textContent =  joke;
         punchLineDiv.textContent="";
       break;
     case "twopart":
@@ -70,4 +51,4 @@ function displayJoke(){
 function displayPunchline(){
   punchLineDiv.textContent = punchLine;
 }
-//getJokeButton.addEventListener("click", getJoke);
+submit.addEventListener("click", getJoke);

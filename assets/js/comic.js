@@ -1,6 +1,6 @@
 var title = document.getElementById("title");
 var display = document.getElementById("display");
-var comicButton = document.getElementById("comicbtn");
+var comicButton = document.getElementById("submit");
 var url;
 
 // Reference to corsheader taken from BUILD XKCD COMICS APP API PROJECT || XKCD API, SUPERAGENT, HTML, CSS JAVASCRIPT ES6 CLASSES TUTORIAL BY DANASCRIPT ON YOUTUBE

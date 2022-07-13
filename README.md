@@ -18,7 +18,7 @@
 ## Gentting Strated
 * [Git Hub Repository](https://github.com/tarajevans/coffee-break.git)
 * [ Demo Video ](https://drive.google.com/file/d/11MmGjKZA9yruCWH5qrpOyDUhUHqF8P2q/view)
-* [Deployed link]()
+* [Deployed link](https://tarajevans.github.io/coffee-break/)
 
 ## Prerequisites
 * To install this application, you will need a text editor. I recommend Visual Studio Code.

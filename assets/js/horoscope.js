@@ -1,3 +1,4 @@
+var submit = document.getElementById("submit_3");
 function getHoriscope(month, day){
     apiUrl = "https://the-ultimate-api-challenge.herokuapp.com/https://ohmanda.com/api/horoscope/"+getZodiak(month, day);
     fetch(apiUrl)

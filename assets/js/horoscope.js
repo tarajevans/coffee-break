@@ -1,6 +1,7 @@
 var submit = document.getElementById("submit_3");
+var horoscopeText = document.getElementById("displayHoroscope");
 function getHoriscope(month, day){
-    apiUrl = "https://the-ultimate-api-challenge.herokuapp.com/https://ohmanda.com/api/horoscope/"+getZodiak(month, day);
+    apiUrl = "https://the-ultimate-api-challenge.herokuapp.com/https://ohmanda.com/api/horoscope/"+getZodiac(month, day);
     fetch(apiUrl)
           .then(function (response) {
           return response.json();
@@ -8,11 +9,11 @@ function getHoriscope(month, day){
       .then(function (data) {
          // title.textContent = data.title;
           //displayImage(data.img);
-          console.log(data);
+          horoscopeText.textContent=data.horoscope;
       });
   }
   
-  function getZodiak(month, day){
+  function getZodiac(month, day){
     switch (month){
       case "1":
         if (day <= 19){

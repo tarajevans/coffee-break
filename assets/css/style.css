@@ -34,7 +34,10 @@ h2 {
     font-size: 20px;
     color: beige;
 }
-
+#displayHoroscope {
+    font-size: 20px;
+    color: beige;
+}
 #horotitle{
     font-size: 20px;
     color: beige;

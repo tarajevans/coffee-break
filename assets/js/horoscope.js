@@ -3,8 +3,8 @@ var horoscopeText = document.getElementById("displayHoroscope");
 var monthInput = document.getElementById("month");
 var dayInput = document.getElementById("day");
 var dobButton =document.getElementById("submit_3");
-var userMonth = "1";
-var userDay = "1";
+var userMonth = "Pleaase enter 1-12";
+var userDay = "Pleaase enter 1-31";
 
 function updateDob() {
   userMonth = monthInput.value;
@@ -20,16 +20,28 @@ function updateDob() {
     dayInput.value = "Pleaase enter 1-31";
     monthInput.value = "Pleaase enter 1-12";
   }
-
-var dob = [];
+  var dob = [];
   dob.push(userMonth);
   dob.push(userDay);
   localStorage.setItem("userDob", JSON.stringify(dob));
 }
 
-function getDob() {
-  var dob=JSON.parse(localStorage.getItem("userDob"));
-  console.log(dob);
+function getDob(){
+  var dob = JSON.parse(localStorage.getItem("userDob"));
+  if(dob != null){
+    userMonth = dob[0];
+    userDay = dob[1];
+    console.log(dob);
+  }else{
+    return;
+  }
+}
+
+function pageLoad(){
+  getDob();
+  monthInput.value = userMonth;
+  dayInput.value = userDay;
+  getHoriscope(userMonth, userDay);
 }
 
 dobButton.addEventListener("click", updateDob);
@@ -147,7 +159,4 @@ function getHoriscope(month, day){
     }
   }
 
-  
-
-  getHoriscope("10", "6");
-  getDob();
+  pageLoad();

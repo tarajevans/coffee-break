@@ -7,8 +7,29 @@ var userMonth = "1";
 var userDay = "1";
 
 function updateDob() {
-  console.log("button clicked");
+  userMonth = monthInput.value;
+  userDay = dayInput.value;
+  if (parseInt(userMonth) > 0 && parseInt(userMonth)< 13){
+    if(parseInt(userDay) > 0 && parseInt(userDay) < 32){
+      getHoriscope(userMonth, userDay);
+    }else{
+      dayInput.value = "Pleaase enter 1-31";
+      monthInput.value = "Pleaase enter 1-12";
+    }
+  }else{
+    dayInput.value = "Pleaase enter 1-31";
+    monthInput.value = "Pleaase enter 1-12";
+  }
 
+var dob = [];
+  dob.push(userMonth);
+  dob.push(userDay);
+  localStorage.setItem("userDob", JSON.stringify(dob));
+}
+
+function getDob() {
+  var dob=JSON.parse(localStorage.getItem("userDob"));
+  console.log(dob);
 }
 
 dobButton.addEventListener("click", updateDob);
@@ -129,3 +150,4 @@ function getHoriscope(month, day){
   
 
   getHoriscope("10", "6");
+  getDob();

@@ -1,3 +1,8 @@
+* {
+    color:beige;
+    font-size: 20px;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -16,6 +21,7 @@ main {
 h1, h5 {
     font-weight: bold;
     z-index: 1;
+    color:rgb(54, 51, 51); 
 }
 
 h2 {
@@ -24,36 +30,6 @@ h2 {
     color: beige;
 
 }
-
-#joke {
-    font-size: 20px;
-    color: beige;
-}
-
-#punchline{
-    font-size: 20px;
-    color: beige;
-}
-#displayHoroscope {
-    font-size: 20px;
-    color: beige;
-}
-#horotitle{
-    font-size: 20px;
-    color: beige;
-}
-
-#content{
-    font-size: 20px;
-    color: beige;
-}
-
-#quote{
-    font-size: 20px;
-    color:beige
-}
-
-
 
 input::placeholder {
     color: beige;

@@ -1,5 +1,51 @@
 var submit = document.getElementById("submit_3");
 var horoscopeText = document.getElementById("displayHoroscope");
+var monthInput = document.getElementById("month");
+var dayInput = document.getElementById("day");
+var dobButton =document.getElementById("submit_3");
+var userMonth = "Pleaase enter 1-12";
+var userDay = "Pleaase enter 1-31";
+
+function updateDob() {
+  userMonth = monthInput.value;
+  userDay = dayInput.value;
+  if (parseInt(userMonth) > 0 && parseInt(userMonth)< 13){
+    if(parseInt(userDay) > 0 && parseInt(userDay) < 32){
+      getHoriscope(userMonth, userDay);
+    }else{
+      dayInput.value = "Pleaase enter 1-31";
+      monthInput.value = "Pleaase enter 1-12";
+    }
+  }else{
+    dayInput.value = "Pleaase enter 1-31";
+    monthInput.value = "Pleaase enter 1-12";
+  }
+  var dob = [];
+  dob.push(userMonth);
+  dob.push(userDay);
+  localStorage.setItem("userDob", JSON.stringify(dob));
+}
+
+function getDob(){
+  var dob = JSON.parse(localStorage.getItem("userDob"));
+  if(dob != null){
+    userMonth = dob[0];
+    userDay = dob[1];
+    console.log(dob);
+  }else{
+    return;
+  }
+}
+
+function pageLoad(){
+  getDob();
+  monthInput.value = userMonth;
+  dayInput.value = userDay;
+  getHoriscope(userMonth, userDay);
+}
+
+dobButton.addEventListener("click", updateDob);
+
 function getHoriscope(month, day){
     apiUrl = "https://the-ultimate-api-challenge.herokuapp.com/https://ohmanda.com/api/horoscope/"+getZodiac(month, day);
     fetch(apiUrl)
@@ -7,9 +53,7 @@ function getHoriscope(month, day){
           return response.json();
       })
       .then(function (data) {
-         // title.textContent = data.title;
-          //displayImage(data.img);
-          horoscopeText.textContent=data.horoscope;
+        horoscopeText.textContent=data.horoscope;
       });
   }
   
@@ -114,4 +158,5 @@ function getHoriscope(month, day){
             }
     }
   }
-  getHoriscope("10", "6");
+
+  pageLoad();

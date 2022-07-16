@@ -64,22 +64,46 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col s12 center-align">
-                    <h2>Horoscope &#127769;</h2>
-                    <div class ="container">
-                        <div class="title" id="title"></div>
-                            <div id="displayHoroscope">                                
-                    </div>
-                    <div class="row">
-                        <div class = "center-align">
-                        <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_3" class = "rounded"> Click Here For More Laughs
-                        </button>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h2>horoscope &#127769;</h2>
+                            <div class="container" >
+                                <div class="row">
+                                    <p id="joke">Please enter your date of birth</p>
+                                        <div class="col sm-4" >
+                                            <div class="form">
+                                                <form>
+                                                    <label for="month">Number of month</label>
+                                                    <input type="text" onfocus="this.value='' " placeholder="example: march is 3" id="month" name="name" class="form-input" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4" >
+                                            <div class="form">
+                                                <form>
+                                                    <label for="day">Number of day</label>
+                                                    <input type="text" onfocus="this.value='' " placeholder="choose between 1-31" id="day" name="name" class="form-input" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4">
+                                            <div class = "center-align">
+                                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_3" class = "rounded"> SUBMIT
+                                            </button>
+                                            </div>
+                                        </div>
+                                </div>  
+                            </div>
+
+                        <div class ="container">
+                            <div class="title" id="title"></div>
+
+                                <div id="displayHoroscope"></div> 
                         </div>
+                        
                     </div>
                 </div>
-            </div>
+            <div class="container">
                 <div class = "row">
                     <div class = "center-align">
                     <h2>Coffee Cup Reading &#9749;</h2>
@@ -95,7 +119,7 @@
                     </div>
                     </div>
                 </div>
-
+            </div>
                 <div class="row">
                     <div class = "center-align">
                     <button class="btn waves-effect waves-light" type="submit" name="action" id="submit" class = "rounded"> Click for another Reading
@@ -140,8 +164,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/comic.js"></script>
-    <script src = "assets/js/coffeecup.js"></script>
-    <script src = "assets/js/horoscope.js"></script>
+    <script src ="assets/js/coffeecup.js"></script>
+    <script src ="assets/js/horoscope.js"></script>
 </body>
 
 </html>

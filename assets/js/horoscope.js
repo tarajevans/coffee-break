@@ -1,5 +1,18 @@
 var submit = document.getElementById("submit_3");
 var horoscopeText = document.getElementById("displayHoroscope");
+var monthInput = document.getElementById("month");
+var dayInput = document.getElementById("day");
+var dobButton =document.getElementById("submit_3");
+var userMonth = "1";
+var userDay = "1";
+
+function updateDob() {
+  console.log("button clicked");
+
+}
+
+dobButton.addEventListener("click", updateDob);
+
 function getHoriscope(month, day){
     apiUrl = "https://the-ultimate-api-challenge.herokuapp.com/https://ohmanda.com/api/horoscope/"+getZodiac(month, day);
     fetch(apiUrl)
@@ -7,9 +20,7 @@ function getHoriscope(month, day){
           return response.json();
       })
       .then(function (data) {
-         // title.textContent = data.title;
-          //displayImage(data.img);
-          horoscopeText.textContent=data.horoscope;
+        horoscopeText.textContent=data.horoscope;
       });
   }
   
@@ -114,4 +125,7 @@ function getHoriscope(month, day){
             }
     }
   }
+
+  
+
   getHoriscope("10", "6");

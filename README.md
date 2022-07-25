@@ -1,5 +1,5 @@
 ## Coffee Break Fun
-* This application emphasizes the use of HTML, CSS, Javascript , Jquery to  bring smile on peoples face by generating Jokes , Comics , Daily Readings and Life Mantra qotes.
+* This application emphasizes the use of HTML, CSS, Javascript , Jquery to  bring smile on peoples face by generating Jokes , Comics , Horoscopes and a daily Coffee Cup reading
 
 * This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 

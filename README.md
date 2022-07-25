@@ -11,13 +11,14 @@
 ## API Use
   * [Jokes](https://v2.jokeapi.dev/joke/Programming?safe-mode)
   * [Comics](https://the-ultimate-api-challenge.herokuapp.com)
-  * [Horoscope](https://divineapi.com/api/1.0/get_coffee_cup_reading.php)
+  * [Coffee Cup](https://divineapi.com/api/1.0/get_coffee_cup_reading.php)
+  * [Horoscope](https://ohmanda.com/api/horoscope)
 
 
 
-## Gentting Strated
+## Getting Started
 * [Git Hub Repository](https://github.com/tarajevans/coffee-break.git)
-* [ Demo Video ](https://drive.google.com/file/d/1oU_qhPX8de5oimiqGiUL_eVNWC-rzC46/view)
+* [Demo Video ](https://drive.google.com/file/d/1oU_qhPX8de5oimiqGiUL_eVNWC-rzC46/view)
 * [Deployed link](https://tarajevans.github.io/coffee-break/)
 
 ## Prerequisites

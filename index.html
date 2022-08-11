@@ -14,158 +14,106 @@
 
 <body>
 
+<header class="container">
+    <div class="row ">
+        <div class="col s12" id="jumbotron">
+            <div class="card-panel center-align lighten-2" id="heading">
+                <h1>
+                    Coffee Break Fun
+                </h1>
+                <h3>Take a break!<br>
+                    Wind down with some light humour.
+                </h3>
+                <img src="assets/image/coffee-break.jpg" alt=" coffee picture">
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
     <div class="container">
-
-        <div class="row ">
-            <div class="col s12" id="jumbotron">
-                <div class="card-panel center-align lighten-3" id="heading">
-                    <h1>
-                        Coffee Break Fun
-                    </h1>
-                    <h5>Team Coffee break stems from a way to break from day to day stresses.<br>
-                        This applications is the solution and brings a smile to your face.</h5>
-                    <img src="assets/image/coffee.gif" alt=" coffee picture">
-                </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>Jokes &#128514;</h2>
+                    <div id ="joke"></div>
+                    <div id = "punchline"></div>
+                        <div class="row center-align">
+                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_1" class = "rounded"> Click Here For More Fun
+                            <button>
+                        </div>
             </div>
         </div>
-        <main>
-                <div class="row">
-                    <div class="col s12">
-                        <div class = "center-align" id = "jokes ">
-                            <h2>Jokes &#128514;</h2>
-                    <div id = "joke">
+    </div>
 
-                    </div>
-                            <div id = "punchline">
+    <div class ="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>Comics &#128214;</h2>
+                    <div class="title" id="title"></div>
+                            <img id="display"/>                                
+            </div>
+        </div>
+        <div class="row">
+            <div class = "col s12 center-align">
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_2" class = "rounded"> Click Here For More Laughs
+                </button>
+            </div>
+        </div>
+    </div>
 
-                            </div>
-
-                            <div class="row">
-                                <div class = "center-align">
-                                <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_1" class = "rounded"> Click Here For More Fun
-                                </button>
-                                </div>
-                            </div>
+    <div class="container">
+        <div class="row center-align">
+            <div class="col s12">
+                <h2>Horoscope &#127769;</h2>
+                    <p id="joke">Please enter your date of birth</p>
+                        <div class="col sm-4" >
+                            <form class="form">
+                                <label for="month">Number of month</label>
+                                    <input type="text" onfocus="this.value='' " placeholder="example: march is 3" id="month" name="name" class="form-input" />
+                            </form>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <h2>Comics &#128214;</h2>
-                        <div class ="container">
-                            <div class="title" id="title"></div>
-                                <img id="display"/>                                
+                        <div class="col sm-4" >
+                            <form class="form">
+                                <label for="day">Number of day</label>
+                                    <input type="text" onfocus="this.value='' " placeholder="choose between 1-31" id="day" name="name" class="form-input" />
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class = "center-align">
-                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_2" class = "rounded"> Click Here For More Laughs
+                        <div class="col sm-4 center-align">
+                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_3" class = "rounded"> SUBMIT
                             </button>
-                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 center-align">
-                        <h2>horoscope &#127769;</h2>
-                            <div class="container" >
-                                <div class="row">
-                                    <p id="joke">Please enter your date of birth</p>
-                                        <div class="col sm-4" >
-                                            <div class="form">
-                                                <form>
-                                                    <label for="month">Number of month</label>
-                                                    <input type="text" onfocus="this.value='' " placeholder="example: march is 3" id="month" name="name" class="form-input" />
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="col sm-4" >
-                                            <div class="form">
-                                                <form>
-                                                    <label for="day">Number of day</label>
-                                                    <input type="text" onfocus="this.value='' " placeholder="choose between 1-31" id="day" name="name" class="form-input" />
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="col sm-4">
-                                            <div class = "center-align">
-                                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submit_3" class = "rounded"> SUBMIT
-                                            </button>
-                                            </div>
-                                        </div>
-                                </div>  
-                            </div>
-
-                        <div class ="container">
+            </div>
+        </div>  
                             <div class="title" id="title"></div>
+                            <div id="displayHoroscope"></div> 
+    </div>
+</main>
 
-                                <div id="displayHoroscope"></div> 
-                        </div>
-                        
-                    </div>
-                </div>
-            <div class="container">
-                <div class = "row">
-                    <div class = "center-align">
-                    <h2>Coffee Cup Reading &#9749;</h2>
-                    <div id="horoscope">
-                        <div class = "horo_title" id = "horotitle">
-                        </div>
-                        <div class = "horo_img">
-                            <img id ="display_img"/>
-                        </div>
-                        <div class = "horo_content" id = "content">
-
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-                <div class="row">
-                    <div class = "center-align">
-                    <button class="btn waves-effect waves-light" type="submit" name="action" id="submit" class = "rounded"> Click for another Reading
-                    </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-        
-    </main>
-
-    <footer class="page-footer teal lighten-2">
-        <div class="footer-copyright">
-            <div class="container">
-                <div class="row row-footer">
-                    <div class="col s3">
-                        2022
-                    </div>
-                    <div class="col s3">
-                        
-                    </div>
-                    <div class="col s3">
-                        
-                    </div>
-
-                    <div class="col s3">
-                        <a class="grey-text text-lighten-4 right ftext" href="#!">Stress Buster &#128512;</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"
-        integrity="sha256-uC1JMW5e1U5D28+mXFxzTz4SSMCywqhxQIodqLECnfU=" crossorigin="anonymous"></script>
-    <script src="assets/js/moment.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/comic.js"></script>
-    <script src ="assets/js/coffeecup.js"></script>
-    <script src ="assets/js/horoscope.js"></script>
 </body>
+
+<footer class="page-footer teal lighten-2">
+    <div class="container">
+        <div class="row row-footer footer-copyright">
+            <div class="col s3">2022</div>
+                <div class="col s3">
+                    <a class="grey-text text-lighten-4 right ftext" href="#!">Stress Buster &#128512;/a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"integrity="sha256-uC1JMW5e1U5D28+mXFxzTz4SSMCywqhxQIodqLECnfU=" crossorigin="anonymous"></script>
+<script src="assets/js/moment.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/comic.js"></script>
+<script src ="assets/js/coffeecup.js"></script>
+<script src ="assets/js/horoscope.js"></script>
 
 </html>
